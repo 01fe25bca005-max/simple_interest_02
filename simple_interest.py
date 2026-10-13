@@ -1,12 +1,11 @@
 import sys
 
-def simple_interest(p,t,r):
-    si = (p*t*r)/100
-    return si
+def simple_interest(p, t, r):
+    return (p * t * r) / 100
 
 if __name__ == "__main__":
-    p = float(sys.argv[1])
-    t = float(sys.argv[2])
-    r = float(sys.argv[3])
-print("Simple interest is:", simple_interest(p,t,r))
-print("Simple interest file is:", sys.argv[0])
+    if len(sys.argv) >= 4:
+        p = float(sys.argv[1])
+        t = float(sys.argv[2])
+        r = float(sys.argv[3])
+        print("Simple interest is:", simple_interest(p, t, r))
