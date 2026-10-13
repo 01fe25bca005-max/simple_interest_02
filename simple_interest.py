@@ -10,4 +10,3 @@ if __name__ == "__main__":
     r = float(sys.argv[3])
 
 print("Simple interest is:", simple_interest(p,t,r))
-print("Simple interest file is:", sys.argv[0])
